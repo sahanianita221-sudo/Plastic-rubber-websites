@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubber & Plastic Products Co.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Rubber & Plastic Products Co.</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Product Catalog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Innovative Rubber and Plastic Solutions for Every Industry</h1>
+        <p>Discover our high-quality products designed for durability and performance.</p>
+        <button onclick="scrollToSection('products')">Explore Products</button>
+        <div class="lead-magnet">
+            <h3>Get Our Free Guide: Choosing the Right Rubber Products</h3>
+            <form id="newsletter">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Download Now</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a leading manufacturer of rubber and plastic products, committed to innovation and quality. With over 20 years of experience, we serve industries worldwide.</p>
+        <img src="https://via.placeholder.com/600x300?text=Company+Facility" alt="Company Facility">
+        <button onclick="scrollToSection('contact')">Learn More</button>
+    </section>
+
+    <section id="products">
+        <h2>Product Catalog</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200?text=Rubber+Seals" alt="Rubber Seals">
+                <h3>Rubber Seals</h3>
+                <p>Durable seals for industrial use. Starting at $10/unit.</p>
+                <button onclick="openInquiry('Rubber Seals')">Inquire Now</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200?text=Plastic+Hoses" alt="Plastic Hoses">
+                <h3>Plastic Hoses</h3>
+                <p>Flexible hoses for various applications. Starting at $15/unit.</p>
+                <button onclick="openInquiry('Plastic Hoses')">Inquire Now</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone">
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Inquiry</button>
+        </form>
+        <p>Address: 123 Industrial Rd, City, State 12345 | Phone: (123) 456-7890</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.419415484681!3d37.774929779759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c6b3a0b%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Rubber & Plastic Products Co. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
